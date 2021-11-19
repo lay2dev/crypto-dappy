@@ -1,6 +1,7 @@
 #!/bin/bash
 export ACCESS_API=https://access-testnet.onflow.org
-export WALLET_DISCOVERY=https://fcl-discovery.onflow.org/testnet/authn
+#export WALLET_DISCOVERY=https://fcl-discovery.onflow.org/testnet/authn
+export WALLET_DISCOVERY=https://test.flow.unipass.id/connect
 export FT_CONTRACT=0x9a0766d93b6608b7
 export FUSD_CONTRACT=0xe223d8a629e49c68
 export DAPPY_CONTRACT=0xdb3d539e48a805b7
