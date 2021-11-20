@@ -28,6 +28,7 @@ export default function useFUSD(user) {
           arg(user?.addr, t.Address)
         ]
       })
+      console.log('response', response)
       dispatch({ type: 'SUCCESS', payload: response })
     } catch (err) {
       dispatch({ type: 'ERROR' })
