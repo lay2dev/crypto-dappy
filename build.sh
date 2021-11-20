@@ -12,4 +12,13 @@ export REACT_APP_FT_CONTRACT=${FT_CONTRACT}
 export REACT_APP_FUSD_CONTRACT=${FUSD_CONTRACT}
 export REACT_APP_DAPPY_CONTRACT=${DAPPY_CONTRACT}
 
+git clone --depth 1 https://github.com/lay2dev/fcl-js
+cd fcl-js/packages/fcl
+npm install
+npm run build
+cd ../../../
+
+rm -rf node_modules/@onflow/fcl/dist/*
+cp fcl-js/packages/fcl/dist/* node_modules/@onflow/fcl/dist/ 
+
 npm run build
